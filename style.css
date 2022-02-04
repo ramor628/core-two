@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Rubik+Mono+One&family=Russo+One&family=Ultra&display=swap');
+
+body{
+    background: rgb(255, 139, 203);
+}
+
+.container{
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    margin: 5%;
+    box-sizing: border-box;
+    background: none;
+    text-align: center;
+
+}
+
+.title{
+    font-size: 6em;
+    font-weight: 100;
+    font-family: "Rubik Mono One", serif;
+    text-shadow: none;
+    color:rgb(204, 3, 97);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nested{
+    display: grid;
+    grid-gap: 0%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-top: 3%;
+    box-sizing: border-box;
+    background: none;
+    text-align: center;
+    margin-bottom: 10%;
+
+}
+
+.st{
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.story{
+    font-size: 1.2em;
+    color: rgb(204, 3, 97);
+    font-family: "Russo One", sans-serif;
+}
+
+.lb{
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+rgb(204, 83, 3)
