@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Prompt:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Cousine&family=Martel:wght@200;400;800&family=Rubik+Mono+One&family=Ultra&display=swap');
+
+html{
+    height: 100%;
+}
 
 body{
-    background: rgb(0, 0, 0);
+    background: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#container {
+#intro {
     display: grid;
     grid-gap: 10%;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     margin-top: 15%;
     box-sizing: border-box;
     background: none;
@@ -17,90 +21,299 @@ body{
     margin-bottom: 10%;
 }
 
-.nested {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    background: none;
-    justify-content: center;
-    padding: 1em;
+.box3{
+    padding-left: 40%;
+    padding-right: 40%;
 }
 
-.title{
-    font-size: 5em;
-    font-weight: 400;
-    font-family: "Neonderthaw", sans-serif;
-    color:gold;
+.question{
+    font-size: 3em;
+    font-family: "Martel", sans-serif;
+    color: rgb(255, 255, 255);
+    word-spacing: 5%;
+    line-height: 1;
+}
 
-	text-shadow: 0px 0px 0px rgb(255, 255, 255);
-	transform: translatey(0px);
-    animation: float 2s ease-in-out infinite; 
+.follow{
+    font-size: 1.5em;
+    font-family: "Martel", sans-serif;
+    color: rgb(255, 255, 255);
+    word-spacing: 5%;
+    margin-bottom: 2em;
+    animation: appear 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    opacity: 0%;
+}
+
+#start{
+    border-radius: 100%;
+    height: 3.5em;
+    width: 3.5em;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 0px 0px white;
+    animation: float 2s ease-in-out infinite, appear 2.5s ease-in; 
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+    opacity: 0%;
 }
 
 @keyframes float {
 	0% {
-        color: gold;
-		text-shadow: 0px 0px 50px rgb(255, 255, 255);
+		box-shadow: 0px 0px 10px 2px white;
+		transform: translatey(0px);
+        opacity: 0%;
+	}
+    50% {
+		box-shadow: 0px 0px 20px 5px white;
+		transform: translatey(-15px);
+	}
+    100% {
+		box-shadow: 0px 0px 10px 2px white;
+		transform: translatey(0px);
+        opacity: 100%;
+	}
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0%;
+	}
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+#container {
+    display: none;
+    grid-gap: 10%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin-top: 18%;
+    box-sizing: border-box;
+    background: none;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.box{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.riddle{
+    font-size: 3em;
+    font-family: "Martel", sans-serif;
+    color: rgba(255, 255, 255);
+    word-spacing: 5%;
+    line-height: 1.5;
+}
+
+#light{
+    border-radius: 100%;
+    height: 3.5em;
+    width: 3.5em;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 0px 0px white;
+    animation: float 2s ease-in-out infinite, appear 1s ease-in; 
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0px 0px 10px 2px white;
 		transform: translatey(0px);
 	}
     50% {
-        color: gold;
-        opacity: 50%;
-		text-shadow: 0px 0px 100px rgb(255, 255, 255);
-		transform: translatey(-12px);
+		box-shadow: 0px 0px 30px 7px white;
+		transform: translatey(-15px);
 	}
     100% {
-        color: gold;
-		text-shadow: 0px 0px 40px rgb(255, 255, 255);
+		box-shadow: 0px 0px 10px 2px white;
 		transform: translatey(0px);
 	}
 }
 
-.box{
+@keyframes appear {
+	0% {
+		opacity: 0%;
+	}
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+#white{
+    display: none;
+    grid-gap: 10%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin-top: 15%;
+    box-sizing: border-box;
+    background: none;
+    text-align: center;
+    margin-bottom: 35em;
+}
+
+.answer{
+    font-size: 4em;
+    font-family: "Martel", sans-serif;
+    color: rgb(0, 0, 0);
+    word-spacing: 5%;
+    opacity: 0%;
+    animation: appear2 3s ease-in-out; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear2 {
+	0% {
+		opacity: 0%;
+        color: rgb(255, 255, 255);
+	}
+    50%{
+        opacity: 100%;
+        color: rgb(0, 0, 0);
+    }
+    100% {
+		opacity: 0%;
+        color: rgb(255, 255, 255);
+	}
+}
+
+.message{
+    margin-bottom: 10em;
+}
+
+.scroll{
+    font-size: 1.5em;
+    font-family: "Martel", sans-serif;
+    word-spacing: 5%;
+    animation: scroll 3s ease-in; 
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+@keyframes scroll {
+	0% {
+		opacity: 0%;
+        color: rgb(255, 255, 255);
+	}
+    100%{
+        opacity: 100%;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.arrow{
+    font-size: 2em;
+    font-family: "Martel", sans-serif;
+    word-spacing: 5%;
+    animation: scroll 3s ease-in, bounce 2s ease-in-out infinite; 
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    color: black;
+    opacity: 0%;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translatey(0px);
+	}
+    50%{
+        transform: translatey(-10px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+.riddle2{
+    font-size: 3em;
+    font-family: "Martel", sans-serif;
+    color: rgb(0, 0, 0);
+    word-spacing: 5%;
+    line-height: 1.5;
+}
+
+.box2{
+    margin-top: 2em;
     padding-left: 20%;
     padding-right: 20%;
 }
 
-.riddle{
-    font-size: 1.5em;
-    font-family: "Press Start 2P", sans-serif;
-    color: rgba(255, 255, 255);
-}
-
-label{
-    font-family: "Press Start 2P", sans-serif;
-    color: blueviolet;
-    font-size: 1.5em;
-}
-
-#answer{
-    height: 1.5em;
-    width: 10em;
-    justify-content: center;
-    font-family: "Press Start 2P", sans-serif;
-    color: blueviolet;
-    font-size: 1.5em;
-    background-color: rgba(255, 255, 255);
-}
-
-#submit{
-    font-size: 1em;
-    font-family: "Press Start 2P", sans-serif;
-    background-color: blueviolet;
-    color: white;
-    height: 1.5em;
-    align-self: center;
-    cursor: pointer; 
-}
 
 
-#clue{
-    display: grid;
+
+#next{
+    display: none;
     grid-gap: 10%;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
+    margin-top: 10%;
     box-sizing: border-box;
     background: none;
     text-align: center;
+    margin-bottom: 10%;
+}
+
+.how{
+    font-size: 3em;
+    font-family: "Martel", sans-serif;
+    color: rgb(0, 0, 0);
+    word-spacing: 5%;
+    line-height: 1;
+    margin-bottom: 10em;
+}
+
+.info{
+    font-size: 3em;
+    font-family: "Martel", sans-serif;
+    color: rgb(0, 0, 0);
+    word-spacing: 5%;
+    line-height: 1.5;
+    margin-bottom: 10em;
+}
+
+.info2{
+    font-size: 3em;
+    font-family: "Martel", sans-serif;
+    color: rgb(0, 0, 0);
+    word-spacing: 5%;
+    line-height: 1.5;
+}
+
+#link {
+    margin-top: -5em;
+    border-radius: 100%;
+    height: 3.5em;
+    width: 3.5em;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0); 
+    animation: float2 2s ease-in-out infinite, appear 1s ease-in; 
+}
+
+@keyframes float2 {
+	0% {
+		box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+		transform: translatey(0px);
+	}
+    50% {
+		box-shadow: 0px 0px 20px 5px rgb(0, 0, 0);
+		transform: translatey(-15px);
+	}
+    100% {
+		box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+		transform: translatey(0px);
+	}
 }

@@ -10,34 +10,60 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Cousine&family=Martel:wght@200;400;800&family=Rubik+Mono+One&family=Ultra&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div id="intro">
+        <div class="box3">
+            <p class="question">Want to find new music?</p>
+            <br>
+            <p class="follow">follow me</p>
+        </div>
+        <div>
+            <button id="start" onclick="start()"></button>
+        </div>
+    </div>
+
     <div id="container">
-            <div>
-                <p class="title">Find a new Playlist</p>
-            </div>
             <div class="box">
                 <p class="riddle">
                     What can fill an entire room without taking any space?
                 </p>
             </div>
-                <div class="nested">
-                    <form id="form" action="/" method="get">
-                        <label for="answer">Answer:</label>
-                        <input id="answer" type="text" name="answer" required>
-                        <button id="submit" onclick="pressed()">Submit</button>
-                    </form>
+            <br>
+                <div>
+                    <button id="light" onclick="bgWhite()"></button>
                 </div>
     </div>
  
     <br><br><br><br><br>
 
-    <div id="clue">
+    <div id="white">
         <div>
-            <p>click on this link</p>
+            <p class="answer">Light</p>
         </div>
+        <div class="message">
+            <p class="scroll">keep scrolling</p>
+            <p class="arrow">↓</p>
+        </div>
+        <div class="box2">
+            <p class="riddle2">I have created a playlist with songs that fit with this theme</p>
+        </div>
+    </div>
+
+    <div id="next">
+        <div class="box2">
+            <p class="how">How do you find it?</p>
+        </div>
+        <div class="box2">
+            <p class="info">The next button will lead you to a pinterest account</p>
+            <p class="info2">Find the image with the link to the playlist</p>
+        </div>
+            <div>
+                <button id="link" onclick="pinterestPage()"></button>
+            </div>
+            <br><br><br><br><br><br>
     </div>
 
 </body>
