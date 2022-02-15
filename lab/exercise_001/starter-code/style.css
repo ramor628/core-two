@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+@font-face{
+    font-family: "IBM Plex Sans";
+    src: url("/fonts/IBMPlexSans-Regular.woff"), format('woff'), url("/fonts/IBMPlexSans-Regular.woff2"), format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "IBM Plex Sans Bold";
+    src: url("/fonts/IBMPlexSans-Bold.woff"), format('woff'), url("/fonts/IBMPlexSans-Bold.woff2"), format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+    color: #111;
+    background-color: #fbf5ee;
+}
+
+h1{
+  font-size: 3rem; 
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  color: #705c67; 
+  margin: 0em;
+}
+
+h2{
+    font-size: 26px;
+    color: #474745;
+    margin: 0em;
+}
+
+h3{
+    color: #474745;
+    margin: 0em;
+}
+
+p{
+    font-size: 18px;
+}
+
+.container{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 100px;
+}
+
+.content::first-letter{
+    font-size: 3rem;
+    background-color: #f7e2d9;
+    border-color: #d67b65;
+    border-style: solid;
+    margin: 0%;
+}
+
+.author{
+    color: #705c67; 
+    margin-top: 10px;
+}
+
+a{
+    background-image: linear-gradient(90deg, rgba(214,123,101,1) 0%, rgba(112,92,103,1) 100%);
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
