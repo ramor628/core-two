@@ -11,7 +11,7 @@ body{
 }
 
 p{
-    font-family: 'broadsheet', serif;
+    font-family: 'adobe-caslon-pro', serif;
     text-align: justify;
     color: white;
     font-style: normal;
@@ -26,7 +26,7 @@ p{
 
 .book{
     font-family: 'broadsheet', serif;
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 400;
     color: rgb(179, 40, 47);
     text-align: center;
@@ -34,7 +34,7 @@ p{
 
 .author{
     font-family: 'broadsheet', serif;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 400;
     color: rgb(179, 40, 47);
     text-align: center;
@@ -43,16 +43,17 @@ p{
 .title{
     margin-top: 10em;
     font-family: 'broadsheet', serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 400;
     color: rgb(179, 40, 47);
     text-align: center;
+    line-height: 1cm;
 }
 
 .title1{
-    margin-top: 2em;
+    margin-top: 4em;
     font-family: 'broadsheet', serif;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 400;
     color: rgb(179, 40, 47);
     text-align: center;
