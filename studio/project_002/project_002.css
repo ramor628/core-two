@@ -25,25 +25,25 @@ p{
 }
 
 .book{
+    font-size: 3em;
     font-family: 'broadsheet', serif;
-    font-size: 4em;
     font-weight: 400;
     color: rgb(179, 40, 47);
     text-align: center;
 }
 
 .author{
+    font-size: 1.5em;
     font-family: 'broadsheet', serif;
-    font-size: 2em;
     font-weight: 400;
     color: rgb(179, 40, 47);
     text-align: center;
 }
 
 .title{
+    font-size: 1.5em;
     margin-top: 10em;
     font-family: 'broadsheet', serif;
-    font-size: 3em;
     font-weight: 400;
     color: rgb(179, 40, 47);
     text-align: center;
@@ -51,9 +51,9 @@ p{
 }
 
 .title1{
+    font-size: 2em;
     margin-top: 4em;
     font-family: 'broadsheet', serif;
-    font-size: 2em;
     font-weight: 400;
     color: rgb(179, 40, 47);
     text-align: center;
