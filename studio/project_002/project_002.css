@@ -132,6 +132,11 @@ p{
 }
 
 
+.box2{
+    margin-bottom: 8em;
+}
+
+
 .click{
     text-align: center;
     font-size: 2em;
@@ -152,7 +157,6 @@ p{
 #two{
     display: none;
     animation: pulse 2s ease-in-out infinite;
-    margin-bottom: 2em;
 }
 
 @keyframes pulse{
@@ -168,7 +172,7 @@ p{
 }
 
 
-.box2{
+.box3{
     margin-bottom: 5em;
     margin-top: 15em;
 }
