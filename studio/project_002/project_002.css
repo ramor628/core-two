@@ -20,8 +20,8 @@ p{
 }
 
 .box{
-    margin-top: 12em;
-    margin-bottom: 10em;
+    margin-top: 15em;
+    margin-bottom: 15em;
 }
 
 .book{
@@ -42,7 +42,7 @@ p{
 
 .title{
     font-size: 1.5em;
-    margin-top: 10em;
+    margin-top: 15em;
     font-family: 'broadsheet', serif;
     font-weight: 400;
     color: rgb(179, 40, 47);
