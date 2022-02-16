@@ -138,8 +138,9 @@ p{
 
 
 .click{
+    font-family: 'broadsheet', serif;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1cm;
     margin-bottom: 2em;
     font-weight: 400;
