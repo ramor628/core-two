@@ -2,7 +2,6 @@
 
 html{
     width: 100%;
-    cursor: pointer;
 }
 
 body{
@@ -56,11 +55,13 @@ p{
     padding: 2mm;
     background: #ba0104;
     color: white;
+    cursor: pointer;
 }
 
 #night{
     padding: 2mm;
     color: #ba0104;
+    cursor: pointer;
 }
 
 .book{
@@ -176,6 +177,7 @@ p{
     color: #ba8f01;
     margin-bottom: 0em;
     animation: pulse 3s ease-in-out infinite;
+    cursor: pointer;
 }
 
 @keyframes pulse{
