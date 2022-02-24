@@ -20,11 +20,21 @@ p{
     font-style: normal;
 }
 
+.container{
+    display: grid;
+    grid-gap: 4em;
+    grid-template-columns: auto;
+    grid-template-rows:repeat(2, auto);
+    box-sizing: border-box;
+    background: none;
+    position: relative;
+    justify-items: center;
+    margin-top: 5em;
+}
 
 .rotate{
-    margin-top: 10em;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-content: center;
     align-items: center;
     overflow: hidden;
     height: 20em;
@@ -50,6 +60,31 @@ p{
 
 
 img{
-    height: 55em;
+    height: 12em;
     width: auto;
 }
+
+
+.next{
+    align-content: center;
+    border-color: #ba0104;
+    border-style: solid;
+    border-radius: 2em;
+    border-width: 1mm;
+    width: 7em;
+    height: auto;
+    overflow: hidden;
+    padding: 2mm;
+    background: #000000;
+    
+}
+
+a{
+    color: #ba0104;
+    cursor: pointer;
+    font-family: 'anton', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-decoration: none;
+}
+
