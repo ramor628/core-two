@@ -1,0 +1,42 @@
+@import url("https://use.typekit.net/pvc1hts.css");
+
+@media (orientation: landscape) {
+    html{
+        width: 100%;
+    }
+
+    body{
+        text-align: -webkit-center;
+        background: #000000;
+        color: #ba0104;
+    }
+    
+    p{
+        text-align: center;
+        font-size: 1em;
+        line-height: 6mm;
+    
+        font-family: 'anton', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .box{
+        padding: 2em;
+        margin: 0em;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:repeat(1, auto);
+        box-sizing: border-box;
+        background: none;
+        justify-items: center;
+
+        position: fixed;
+        margin: 8em;
+        left: -1mm;
+        top: -1mm;
+    }
+}
