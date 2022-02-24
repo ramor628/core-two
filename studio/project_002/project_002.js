@@ -1,4 +1,4 @@
-function displayVolt(){
+/*function displayVolt(){
     document.getElementById('first').style.display = 'none';
     document.getElementById('fence').style.display = 'grid';
     document.getElementById('box3').style.marginBottom = '5em';

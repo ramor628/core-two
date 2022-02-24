@@ -1,0 +1,55 @@
+@import url("https://use.typekit.net/pvc1hts.css");
+
+html{
+    width: 100%;
+}
+
+body{
+    text-align: -webkit-center;
+    background: #000000;
+    color: #ba0104;
+}
+
+p{
+    text-align: justify;
+    font-size: 12pt;
+    line-height: 6mm;
+
+    font-family: 'mencken-std', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.rotate{
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 20em;
+    width: 20em;
+
+    animation: blink 2.5s ease-in-out infinite;
+}
+
+
+@keyframes blink{
+    0%{
+        opacity: 10%;
+    }
+
+    50%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 10%;
+    }
+}
+
+
+img{
+    height: 55em;
+    width: auto;
+}
