@@ -19,7 +19,7 @@ body{
     background: none;
     position: relative;
     justify-items: center;
-    margin-top: 5em;
+    margin-top: 10em;
 }
 
 .rotate{
@@ -54,27 +54,90 @@ img{
     width: auto;
 }
 
-
 .next{
-    align-content: center;
-    border-color: #ba0104;
-    border-style: solid;
-    border-radius: 2em;
-    border-width: 1mm;
-    width: 7em;
-    height: auto;
-    overflow: hidden;
-    padding: 2mm;
-    background: #000000;
+    display: none;
+}
+
+@media (orientation: landscape){
+
+    html{
+        width: 100%;
+    }
+    
+    body{
+        text-align: -webkit-center;
+        background: #000000;
+        color: #ba0104;
+    }
+    
+    .container{
+        display: grid;
+        grid-gap: 4em;
+        grid-template-columns: auto;
+        grid-template-rows:repeat(2, auto);
+        box-sizing: border-box;
+        background: none;
+        position: relative;
+        justify-items: center;
+        margin-top: 10em;
+    }
+    
+    .rotate{
+        display: none;
+        place-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 20em;
+        width: 20em;
+    
+        animation: blink 2.5s ease-in-out infinite;
+    }
+    
+    
+    @keyframes blink{
+        0%{
+            opacity: 10%;
+        }
+    
+        50%{
+            opacity: 100%;
+        }
+    
+        100%{
+            opacity: 10%;
+        }
+    }
+    
+    
+    img{
+        height: 12em;
+        width: auto;
+    }
+    
+
+
+    .next{
+        display: block;
+        align-content: center;
+        border-color: #ba0104;
+        border-style: solid;
+        border-radius: 2em;
+        border-width: 1mm;
+        width: 7em;
+        height: auto;
+        overflow: hidden;
+        padding: 2mm;
+        background: #000000;
+        
+    }
+    
+    a{
+        color: #ba0104;
+        cursor: pointer;
+        font-family: 'anton', sans-serif;
+        font-weight: 400;
+        font-size: 2em;
+        text-decoration: none;
+    }
     
 }
-
-a{
-    color: #ba0104;
-    cursor: pointer;
-    font-family: 'anton', sans-serif;
-    font-weight: 400;
-    font-size: 2em;
-    text-decoration: none;
-}
-
