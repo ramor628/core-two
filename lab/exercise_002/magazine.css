@@ -100,16 +100,14 @@ img:hover{
 }
 
 .mainimage{
-    width: 100vw;
-    height: auto;
-    opacity: 90%;
-    overflow: hidden;
-    image-resolution: 300dpi;
+    object-fit: contain;
     object-position: center;
     opacity: 100%;
+    width: 250%;
+    height: 100vh;
 }
 
-.bigimage:hover > .colorlayer{
+.boximage:hover > .colorlayer{
     background: rgba(0, 209, 35, 0.5);
     position: absolute;
     top: 0;
@@ -119,7 +117,7 @@ img:hover{
 }
 
 .boximage{
-    height: 80vh;
+    height: 60em;
     width: auto;
     overflow: hidden;
     display: flex;
@@ -139,7 +137,7 @@ img:hover{
     font-family: 'termina', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .title{
@@ -154,7 +152,7 @@ img:hover{
     font-family: 'termina', sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .info{
@@ -170,7 +168,7 @@ img:hover{
     font-family: 'termina', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .left{
