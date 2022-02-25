@@ -215,3 +215,190 @@ img:hover{
     overflow: hidden;
     object-fit: contain;
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) {
+
+    @import url("https://use.typekit.net/rkv5atx.css");
+    
+    html{
+    width: 100%;
+    }
+
+    body{
+        background: rgb(255, 255, 255);
+        margin: 0em;
+    }
+
+    .container{
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:repeat(3, auto);
+        box-sizing: border-box;
+        background: none;
+        position: relative;
+    
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    .header{
+        margin-top: 4mm;
+        margin-bottom: 2em;
+        height: 12em;
+        width: 100vw;
+    }
+    
+    h1{
+        font-size: 5em;
+        cursor: pointer;
+        margin-top: 0em;
+        margin-bottom: 0em;
+        padding: 0em;
+    
+        color: rgb(0, 0, 0);
+        font-family: 'termina', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        word-spacing: 5em;
+    }
+
+    .menu{
+        text-align: left;
+        display: grid;
+        grid-gap: 0em;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns:auto;
+        box-sizing: border-box;
+        background: none;
+        position: relative;
+        left: 1em;
+    }
+    
+    a{
+        text-decoration: none;
+        font-size: 0.5em;
+        color: rgb(0, 0, 0);
+        opacity: 50%;
+    
+        font-family: 'termina', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    a:hover{
+        opacity: 100%;
+        font-weight: 700;
+    }
+
+    img{
+        opacity: 90%;
+        image-resolution: 200dpi;
+    }
+
+    .mainimage{
+        width: 100vw;
+        height: 100%;
+        opacity: 90%;
+        overflow: hidden;
+        image-resolution: 300dpi;
+    }
+
+    .boximage{
+        height: 80vh;
+        width: auto;
+        overflow: hidden;
+        display: flex;
+        z-index: 0;
+        position: relative;
+    }
+
+    .location{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        margin: 0em;
+        left: 5%;
+        top: 2%;
+        text-align: right;
+    
+        font-family: 'termina', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+    }
+
+    .title{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        margin: 0em;
+        right: 5%;
+        bottom: 13%;
+        text-align: justify;
+    
+        font-family: 'termina', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5em;
+    }
+    
+    .info{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        margin: 0em;
+        right: 5%;
+        bottom: 2%;
+        text-align-last: justify;
+    
+    
+        font-family: 'termina', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+    }
+    
+    .left{
+        z-index: 1;
+        position: absolute;
+        color: white;
+        left: 4%;
+        top: 50%;
+        
+        font-family: 'termina', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3em;
+        cursor: pointer;
+        opacity: 50%;
+    }
+    
+    .places{
+        display: flex;
+        flex-flow: row wrap;
+    
+        margin-top: 3em;
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+    
+    .empty{
+        height: 100%;
+        width: auto;
+        padding: 1em;
+        padding-top: 8mm;
+        padding-bottom: 8mm;
+        
+    }
+    
+    .box{
+        width: 30vw;
+        height: 15em;
+        overflow: hidden;
+        object-fit: contain;
+    }
+
+}
