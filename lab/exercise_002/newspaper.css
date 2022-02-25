@@ -1,0 +1,217 @@
+@import url("https://use.typekit.net/rkv5atx.css");
+
+html{
+    width: 100%;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    margin: 0em;
+}
+
+.container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:repeat(3, auto);
+    box-sizing: border-box;
+    background: none;
+    position: relative;
+
+    width: 100vw;
+    margin-bottom: 3em;
+}
+
+.header{
+    margin-top: 4mm;
+    margin-bottom: 2em;
+    height: 14em;
+    width: 100vw;
+}
+
+h1{
+    font-size: 10em;
+    cursor: pointer;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding: 0em;
+
+    color: rgb(0, 0, 0);
+    font-family: 'termina', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    word-spacing: 5em;
+}
+
+.menu{
+    text-align: center;
+    display: grid;
+    grid-gap: 0em;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows:auto;
+    box-sizing: border-box;
+    background: none;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+
+    font-family: 'termina', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:hover{
+    opacity: 100%;
+    font-weight: 700;
+}
+
+.button{
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+img{
+    opacity: 100%;
+    image-resolution: 100dpi;
+}
+
+img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.mainimage{
+    width: 100vw;
+    height: auto;
+    opacity: 90%;
+    overflow: hidden;
+    image-resolution: 300dpi;
+}
+
+.mainimage:hover{
+    opacity: 100%;
+}
+
+.boximage{
+    height: 80vh;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    z-index: 0;
+    position: relative;
+}
+
+.location{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    margin: 0em;
+    left: 4%;
+    top: 6%;
+    text-align: right;
+
+    font-family: 'termina', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.title{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    margin: 0em;
+    right: 4%;
+    bottom: 22%;
+    text-align: justify;
+
+    font-family: 'termina', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+}
+
+.info{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    margin: 0em;
+    right: 4%;
+    bottom: 5%;
+    text-align-last: justify;
+
+
+    font-family: 'termina', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.left{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    left: 4%;
+    top: 50%;
+    
+    font-family: 'termina', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.left:hover{
+    opacity: 100%;
+    font-weight: 700;
+}
+
+.right{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    right: 6%;
+    top: 50%;
+    
+    font-family: 'termina', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.right:hover{
+    opacity: 100%;
+    font-weight: 700;
+}
+
+.places{
+    display: flex;
+    flex-flow: row wrap;
+
+    margin-top: 3em;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.empty{
+    height: 100%;
+    width: auto;
+    padding: 1em;
+    padding-top: 8mm;
+    padding-bottom: 8mm;
+}
+
+.box{
+    width: 25vw;
+    height: 50em;
+    overflow: hidden;
+    object-fit: contain;
+}
