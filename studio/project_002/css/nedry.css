@@ -13,8 +13,8 @@
     
     p{
         text-align: center;
-        font-size: 1em;
-        line-height: 6mm;
+        font-size: 1.7em;
+        line-height: 10mm;
     
         font-family: 'anton', sans-serif;
         font-weight: 400;
@@ -26,7 +26,7 @@
         margin: 0em;
     }
 
-    .container{
+    #container{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows:repeat(2, auto);
@@ -39,5 +39,33 @@
         margin: 8em;
         left: -1mm;
         top: -1mm;
+    }
+    .fa-circle{
+        animation: click 2.2s ease-in-out infinite;
+    }
+
+    @keyframes click {
+        0%{
+            opacity: 100%;
+            zoom: 100%;
+        }
+        100%{
+            opacity: 0%;
+            zoom: 150%;
+        }
+    }
+
+    .fa-hand-pointer{
+        transform: translateY(2mm);
+        animation: size 2s ease-in-out infinite;
+    }
+
+    @keyframes size {
+        0%{
+            zoom: 150%;
+        }
+        100%{
+            zoom: 100%;
+        }
     }
 }
