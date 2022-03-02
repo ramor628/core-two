@@ -5,6 +5,7 @@
     document.getElementById('click').style.display = 'none';
 }*/
 
-function myFunction() {
+function clearScreen() {
     document.getElementById('container').style.display = 'none';
+    document.getElementById('door').style.display= 'grid';
 }
