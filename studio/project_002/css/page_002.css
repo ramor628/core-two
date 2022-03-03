@@ -13,7 +13,7 @@
 
     a{
         text-decoration: none;
-        color: #ba0104;
+        height: 60vh;
     }
     
     
@@ -41,7 +41,6 @@
         justify-items: center;
 
         margin-top: 2em;
-        position: fixed;
         left: -1mm;
         top: -1mm;
     }
@@ -58,7 +57,7 @@
     }
 
     img{
-        height: 0vh;
+        height: 70vh;
         width: 100vw;
     }
 }
