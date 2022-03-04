@@ -31,7 +31,7 @@
     #door{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows:repeat(3, auto);
+        grid-template-rows:repeat(1, auto);
         grid-gap: 1em;
         box-sizing: border-box;
         background: none;
@@ -41,6 +41,59 @@
         position: fixed;
         left: -1mm;
         top: -1mm;
+
+        animation: disappear 3s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes disappear {
+        0%{
+            opacity: 100%;
+            transform: scaleY(1);
+        }
+        100%{
+            opacity: 0%;
+            transform: scaleY(0);
+        }
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:repeat(3, auto);
+        grid-gap: 1em;
+        box-sizing: border-box;
+        background: none;
+        justify-items: center;
+
+        position: fixed;
+        margin-top: 2em;
+        margin-left: 7em;
+        margin-right: 7em;
+        margin-bottom: 7em;
+        left: -1mm;
+        top: -1mm;
+
+        animation: appear 2s ease-in ;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+    }
+
+    @keyframes appear {
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+            transform: scaleY(1);
+        }        
+    }
+
+    .textbox{
+        padding: 2em;
+        margin: 0em;
+        color: #ba0104;
     }
 
     .push{
@@ -58,7 +111,21 @@
     }
 
     img{
+        display: grid; 
         height: 60vh;
         width: 100vw;
+
+        animation: disappear 4s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes disappear {
+        0%{
+            opacity: 100%;
+        }
+        100%{
+            opacity: 0%;
+            display: none;
+        }
     }
 }
