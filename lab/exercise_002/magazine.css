@@ -99,13 +99,6 @@ img:hover{
     cursor: pointer;
 }
 
-.mainimage{
-    object-fit: contain;
-    object-position: center;
-    opacity: 100%;
-    width: 250%;
-    height: 100vh;
-}
 
 .boximage:hover > .colorlayer{
     background: rgba(0, 209, 35, 0.5);
@@ -251,25 +244,29 @@ div.box:hover + .colorplaces{
     @import url("https://use.typekit.net/rkv5atx.css");
     
     html{
-    width: 100%;
+        width: 100%;
     }
-
+    
     body{
-        background: rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
         margin: 0em;
     }
-
+    
+    p{
+        color: white;
+    }
+    
     .container{
         text-align: center;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows:repeat(3, auto);
+        grid-template-rows:repeat(4, auto);
         box-sizing: border-box;
         background: none;
         position: relative;
     
         width: 100%;
-        margin-bottom: 3em;
+        margin-bottom: 0em;
     }
 
     .header{
@@ -326,21 +323,13 @@ div.box:hover + .colorplaces{
         image-resolution: 200dpi;
     }
 
-    .mainimage{
-        width: 100vw;
-        height: 100%;
-        opacity: 90%;
-        overflow: hidden;
-        image-resolution: 300dpi;
-    }
 
     .boximage{
-        height: 80vh;
-        width: auto;
+        width: 100%;
+        height: auto;
         overflow: hidden;
-        display: flex;
+        
         z-index: 0;
-        position: relative;
     }
 
     .location{
