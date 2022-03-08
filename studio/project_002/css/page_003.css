@@ -128,4 +128,48 @@
             display: none;
         }
     }
+
+
+    #box{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:repeat(3, auto);
+        grid-gap: 1em;
+        box-sizing: border-box;
+        background: none;
+        justify-items: center;
+
+        position: fixed;
+        margin-top: 2em;
+        margin-left: 7em;
+        margin-right: 7em;
+        margin-bottom: 7em;
+        left: -1mm;
+        top: -1mm;
+
+        animation: appear 1s ease-in ;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+    }
+
+    @keyframes appear {
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+            transform: scaleY(1);
+        }        
+    }
+
+    .text{
+        padding: 2em;
+        margin: 0em;
+        color: #ba0104;
+    }
+
+    #next{
+        display: none;
+    }
 }

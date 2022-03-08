@@ -28,30 +28,60 @@
         color: #ba0104;
     }
 
-    #container{
+    #hit{
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows:repeat(1, auto);
+        align-items: center;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: auto;
         grid-gap: 1em;
         box-sizing: border-box;
         background: none;
         justify-items: center;
 
-        position: fixed;
-        margin-top: 6em;
-        margin-left: 7em;
-        margin-right: 7em;
-        margin-bottom: 3em;
-        left: -1mm;
-        top: -1mm;
+        margin-left:  10em;
+        margin-right: 10em;
+        margin-top: 5em;
+    }
 
-        animation: appear 1s ease-in ;
+    .gas{
+        height: auto;
+        width: 30em;
+    }
+
+    #press{
+        position: absolute;
+    }
+
+
+    #first{
+        display: block;
+        animation: disappear 2s ease-in-out;
         animation-delay: 0s;
+        animation-fill-mode: forwards;
+        opacity: 100%;
+    }
+
+
+    @keyframes disappear{
+        0%{
+            opacity: 100%;
+        }
+        100%{
+            opacity: 0%;
+            transform: scaleY(1);
+        }        
+    }
+
+
+    #next{
+        display: block;
+        animation: appear 2s ease-in-out;
+        animation-delay: 1s;
         animation-fill-mode: forwards;
         opacity: 0%;
     }
 
-    @keyframes appear {
+    @keyframes appear{
         0%{
             opacity: 0%;
         }
@@ -61,36 +91,11 @@
         }        
     }
 
-    .textbox{
-        padding: 2em;
-        margin: 0em;
-        color: #ba0104;
-    }
-
-    #hit{
-        display: none;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: auto;
-        grid-gap: 1em;
-        box-sizing: border-box;
-        background: none;
-        justify-items: center;
-    }
-
-    img{
+    .car{
         height: auto;
         width: 100vw;
-        align-self: center;
+        z-index: 0;
     }
 
-    .text {
-        text-align: left;
-        position: fixed;
-        top: 3em;
-        right: 12em;
-     }
+
 }

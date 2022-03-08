@@ -7,5 +7,5 @@
 
 function clearScreen() {
     document.getElementById('container').style.display = 'none';
-    document.getElementById('hit').style.display= 'grid';
+    document.getElementById('next').style.display= 'block';
 }

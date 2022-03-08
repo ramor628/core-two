@@ -13,7 +13,6 @@
 
     a{
         text-decoration: none;
-        color: #ba0104;
     }
     
     
@@ -28,72 +27,28 @@
         color: #ba0104;
     }
 
-    #container{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows:repeat(3, auto);
-        grid-gap: 1em;
-        box-sizing: border-box;
-        background: none;
-        justify-items: center;
-
-        position: fixed;
-        margin-top: 2em;
-        margin-left: 7em;
-        margin-right: 7em;
-        margin-bottom: 7em;
-        left: -1mm;
-        top: -1mm;
-
-        animation: appear 1s ease-in ;
-        animation-delay: 0s;
-        animation-fill-mode: forwards;
-        opacity: 0%;
-    }
-
-    @keyframes appear {
-        0%{
-            opacity: 0%;
-        }
-        100%{
-            opacity: 100%;
-            transform: scaleY(1);
-        }        
-    }
-
-    .textbox{
-        padding: 2em;
-        margin: 0em;
-        color: #ba0104;
-    }
-
     #hit{
-        display: none;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-
+        display: grid;
+        align-items: center;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: auto;
         grid-gap: 1em;
         box-sizing: border-box;
         background: none;
         justify-items: center;
+
+        margin-left:  10em;
+        margin-right: 10em;
+        margin-top: 5em;
     }
 
     img{
         height: auto;
-        width: 70em;
-        position: fixed;
-
-        top: -7em;
-        left: -15em;
+        width: 30em;
     }
 
-    .text {
-        text-align: left;
-        position: fixed;
-        top: 3em;
-        right: 12em;
-     }
+    #press{
+        position: absolute;
+    }
 }
+
