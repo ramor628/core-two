@@ -8,9 +8,9 @@
     body{
         text-align: -webkit-center;
         background: #000000;
-        background-image: url(../img/rain.gif);
         color: #ba0104;
     }
+
 
     a{
         text-decoration: none;
@@ -31,7 +31,22 @@
 
   
     #box{
-        display: block;
+        margin: 0%;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        background-image: url(../img/rain.gif);
+    }
+
+    #box::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.7);
     }
 
     .car{
@@ -46,7 +61,7 @@
     #container{ 
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows:repeat(3, auto);
+        grid-template-rows:repeat(1, auto);
         grid-gap: 1em;
         box-sizing: border-box;
         background: none;
