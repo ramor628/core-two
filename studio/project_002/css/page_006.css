@@ -35,10 +35,12 @@
     }
 
     .car{
-        height: 100vh;
+        height: auto;
         width: 100vw;
         z-index: 0;
-
+        position: fixed;
+        top: -2em;
+        left: -0.5em;
     }
 
     #container{ 
@@ -50,8 +52,7 @@
         background: none;
         justify-items: center;
 
-        position: fixed;
-        margin-top: 2em;
+        margin-top: 4em;
         margin-left: 4em;
         margin-right: 4em;
         margin-bottom: 7em;
