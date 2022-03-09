@@ -92,25 +92,12 @@
     line-height: 10mm;
 }
 
-.textboxtwo{
+.textbold{
     padding-left: 1em;
     padding-right: 1em;
 
     font-size: 4em;
     line-height: 1em;
-}
-
-#texttwo{
-    padding: 1em;
-    margin: 0em;
-    color: #ba0104;
-    display: none;
-}
-
-#textthree{
-    margin: 0em;
-    color: #ba0104;
-    display: none;
 }
 
 }
