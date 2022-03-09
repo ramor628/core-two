@@ -10,3 +10,8 @@ function clearScreenOne() {
     document.getElementById('texttwo').style.display= 'block';
     document.getElementById('dinosaur').style.display= 'none';
 }
+
+function clearScreenTwo() {
+    document.getElementById('texttwo').style.display = 'none';
+    document.getElementById('textthree').style.display= 'block';
+}
