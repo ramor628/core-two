@@ -44,8 +44,8 @@
 
     img{
         height: auto;
-        width: 15em;
-        position: relative;
+        width: 20em;
+        position: absolute;
     }
 
     #press{
