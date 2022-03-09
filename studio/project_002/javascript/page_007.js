@@ -5,7 +5,8 @@
     document.getElementById('click').style.display = 'none';
 }*/
 
-function clearScreen() {
-    document.getElementById('textbox').style.display = 'none';
-    document.getElementById('textone').style.display= 'block';
+function clearScreenOne() {
+    document.getElementById('textone').style.display = 'none';
+    document.getElementById('texttwo').style.display= 'block';
+    document.getElementById('dinosaur').style.display= 'none';
 }
