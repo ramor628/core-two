@@ -94,12 +94,11 @@
     }
 
     .car{
-        height: auto;
+        height: 26em;
         width: 100vw;
         z-index: 0;
         position: fixed;
         top: -17.5em;
-        left: -0.5em;
     }
 
     #container{ 
