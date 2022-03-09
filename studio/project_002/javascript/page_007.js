@@ -5,7 +5,7 @@
     document.getElementById('click').style.display = 'none';
 }*/
 
-function textOne() {
+function clearScreen() {
     document.getElementById('textbox').style.display = 'none';
     document.getElementById('textone').style.display= 'block';
 }
