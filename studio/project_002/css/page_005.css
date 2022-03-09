@@ -105,20 +105,20 @@
     #container{ 
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows:repeat(3, auto);
+        grid-template-rows:repeat(1, auto);
         grid-gap: 1em;
         box-sizing: border-box;
         background: none;
         justify-items: center;
 
         position: fixed;
-        margin-top: 2em;
+        margin-top: 6em;
         margin-left: 4em;
         margin-right: 4em;
-        margin-bottom: 7em;
+        margin-bottom: 5em;
 
         position: fixed;
-        top: -12em;
+        top: -15em;
         z-index: 1;
     }
 
