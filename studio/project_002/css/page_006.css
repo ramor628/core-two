@@ -37,6 +37,7 @@
         display: grid;
         grid-template-columns: auto;
         background-image: url(../img/rain.gif);
+        background-repeat: no-repeat;
     }
 
     #box::before{
@@ -46,6 +47,8 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
+        width: 100vw;
+        height: 100vh;
         background-color: rgba(0, 0, 0, 0.7);
     }
 
