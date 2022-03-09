@@ -56,6 +56,7 @@
 
     #first{
         display: block;
+        background-color: none;
         animation: disappear 2s ease-in-out;
         animation-delay: 0s;
         animation-fill-mode: forwards;
@@ -66,29 +67,58 @@
     @keyframes disappear{
         0%{
             opacity: 100%;
+            z-index: 1;
         }
+        65%{
+            opacity: 0%;
+            transform: scaleY(1);
+            z-index: 0;
+        }  
         100%{
             opacity: 0%;
             transform: scaleY(1);
-        }        
+            z-index: 0;
+            position: fixed;
+        }      
     }
 
 
     #next{
         display: block;
         animation: appear 2s ease-in-out;
-        animation-delay: 2s;
+        animation-delay: 1s;
         animation-fill-mode: forwards;
         opacity: 0%;
+
+        margin: 0%;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: auto;
+        background-image: url(../img/rain.gif);
+        background-repeat: no-repeat;
+    }
+
+    #next::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
     }
 
     @keyframes appear{
         0%{
             opacity: 0%;
-            background-image: none;
+            z-index: 0;
+
         }
         100%{
             opacity: 100%;
+            z-index: 1;
             transform: scaleY(1);
         }        
     }
@@ -98,7 +128,7 @@
         width: 100vw;
         z-index: 0;
         position: fixed;
-        top: -17.5em;
+        top: -2.5em;
         left: -0.5em;
     }
 
@@ -117,12 +147,13 @@
         margin-right: 4em;
         margin-bottom: 5em;
 
-        top: -15em;
+        top: -1em;
+        left: -0.5em;
         z-index: 1;
     }
 
     .textbox{
-        padding: 0em;
+        padding-right: 0.5em;
         margin: 0em;
         color: #ba0104;
     }
