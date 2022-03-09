@@ -45,7 +45,8 @@
 
     .gas{
         height: auto;
-        width: 30em;
+        width: 15em;
+        position: relative;
     }
 
     #press{
@@ -76,7 +77,7 @@
     #next{
         display: block;
         animation: appear 2s ease-in-out;
-        animation-delay: 1s;
+        animation-delay: 2s;
         animation-fill-mode: forwards;
         opacity: 0%;
     }
@@ -92,10 +93,38 @@
     }
 
     .car{
-        height: auto;
+        height: 120vh;
         width: 100vw;
         z-index: 0;
+        position: fixed;
+        top: -17.5em;
+        left: -0.5em;
     }
 
+    #container{ 
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:repeat(3, auto);
+        grid-gap: 1em;
+        box-sizing: border-box;
+        background: none;
+        justify-items: center;
+
+        position: fixed;
+        margin-top: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 7em;
+
+        position: fixed;
+        top: -12.5em;
+        z-index: 1;
+    }
+
+    .textbox{
+        padding: 0em;
+        margin: 0em;
+        color: #ba0104;
+    }
 
 }
