@@ -74,10 +74,18 @@
         z-index: 1;
     }
 
-    .textbox{
+    #textbox{
         padding: 0em;
         margin: 0em;
         color: #ba0104;
+        display: block;
+    }
+
+    #textone{
+        padding: 0em;
+        margin: 0em;
+        color: #ba0104;
+        display: none;
     }
 
 }
