@@ -56,14 +56,14 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows:repeat(8, auto);
-        grid-gap: 12em;
+        grid-gap: 15em;
         box-sizing: border-box;
         background: none;
 
         padding-top: 6em;
         padding-left: 4em;
         padding-right: 4em;
-        padding-bottom: 8em;
+        padding-bottom: 10em;
 
         width: 100vw;
         height: auto;
