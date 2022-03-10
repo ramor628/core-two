@@ -6,8 +6,10 @@
     }
 
     body{
+        width: 100%;
         text-align: -webkit-center;
         background: #000000;
+        background-repeat: repeat-y;
         color: #ba0104;
     }
 
@@ -33,12 +35,12 @@
   
     #box{
         margin: 0%;
-        width: 100vw;
-        height: 100vh;
-        display: grid;
+        width: 100%;
+        height: 100%;
+        display: block;
         grid-template-columns: auto;
         background-image: url(../img/rain.gif);
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
     }
 
     #box::before{
@@ -48,9 +50,10 @@
         right: 0px;
         bottom: 0px;
         left: 0px;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100;
         background-color: rgba(0, 0, 0, 0.7);
+        background-repeat: repeat-y;
     }
 
     .car{
@@ -64,18 +67,18 @@
     #container{ 
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows:repeat(1, auto);
+        grid-template-rows:repeat(2, auto);
         grid-gap: 2em;
         box-sizing: border-box;
         background: none;
 
-        margin-top: 4em;
+        margin-top: 2em;
         margin-left: 4em;
         margin-right: 4em;
-        margin-bottom: 0em;
+        margin-bottom: 4em;
 
         width: 40em;
-        height: auto;
+        height: 100%;
         left: 0px;
         right: 0px;
 
@@ -162,20 +165,74 @@
     z-index: 1;
 }
 
-.countdown{
-    font-size: 7em;
-    line-height: 1em;
-
-    animation: countdown 3s ease-in-out;
+.three{
+    animation: blank 1s ease-in-out;
     animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
-@keyframes countdown {
+@keyframes blank {
     0%{
-        content: "3";
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.two{
+    opacity: 0%;
+    animation: count 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes count {
+    0%{
+        opacity: 0%;
     }
     50%{
-        content: "3";
+        opacity: 100%;
     }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.one{
+    opacity: 0%;
+    animation: count 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+@keyframes count {
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.run{
+    opacity: 0%;
+    animation: run 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+@keyframes run {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.end{
+    position: absolute;
+    margin-top: 10em;
 }
 
 }
