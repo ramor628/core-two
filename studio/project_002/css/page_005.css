@@ -97,7 +97,7 @@
     .car{
         height: 24em;
         width: 100vw;
-        z-index: 0;
+        z-index: -1;
         position: fixed;
         top: -17.5em;
         left: -0.5em;

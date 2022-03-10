@@ -13,21 +13,25 @@
 
 </head>
 <body>
-    <audio id="cargas" src="../audio/aceleration_sound_003.mp3"></audio>
+    <audio id="playsound" src="../audio/aceleration_sound_003.mp3"></audio>
     
-      <a href="./page_007.html">
-        <div id="box">
+    <div id="box">
         <img class="car" src="../img/car-07.png" alt="">
         <div id="container">
+            <a href="./page_007.html"></a>
             <p id="textbox">
                 He was driving fast—too fast—
                 but he had to keep to his timetable. He was surrounded on all sides by
                 black jungle, but soon he should be able to see the beach and the
                 ocean off to his left.
             </p>
+        </a>
         </div>
     </div>
-</a>
+
+<div ontouchstart="pressplay()" id="playaudio">
+    <i class="fa-solid fa-circle-play fa-2xl"></i>
+</div>
 
 </body>
 </html> 

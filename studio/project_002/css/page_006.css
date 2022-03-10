@@ -73,7 +73,7 @@
         background: none;
         justify-items: center;
 
-        margin-top: 7em;
+        margin-top: 5em;
         margin-left: 4em;
         margin-right: 4em;
         margin-bottom: 7em;
@@ -95,4 +95,11 @@
         display: none;
     }
 
+    #playaudio{
+        float: left;
+        top: 1em;
+        left: 1em;
+        position: fixed;
+        z-index: 1;
+    }
 }
