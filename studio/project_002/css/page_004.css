@@ -11,10 +11,6 @@
         color: #ba0104;
     }
 
-    #carbrakes{
-        display: none;
-    }
-
     a{
         text-decoration: none;
     }
@@ -36,14 +32,15 @@
         align-items: center;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: auto;
-        grid-gap: 1em;
+        grid-gap: 3em;
         box-sizing: border-box;
         background: none;
         justify-items: center;
 
-        margin-left:  10em;
-        margin-right: 10em;
-        margin-top: 5em;
+        padding-left:  10em;
+        padding-right: 10em;
+        padding-top: 5em;
+        margin: 0em;
     }
 
     img{
