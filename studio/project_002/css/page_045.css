@@ -65,18 +65,17 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows:repeat(1, auto);
-        grid-gap: 1em;
+        grid-gap: 2em;
         box-sizing: border-box;
         background: none;
-        justify-items: center;
 
-        margin-top: 8em;
+        margin-top: 4em;
         margin-left: 4em;
         margin-right: 4em;
         margin-bottom: 0em;
 
         width: 40em;
-        height: 11em;
+        height: auto;
         left: 0px;
         right: 0px;
 
@@ -84,6 +83,45 @@
         position: relative;
     }
 
+    .fa-arrows-up-down{
+        color: #ba0104;
+        opacity: 0%;
+    
+        animation: bounce 1s ease-in-out infinite, show 3s ease-in;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes bounce{
+        0%{
+            transform: translateY(-20px);
+        }
+        
+        50%{
+            transform: translateY(0px);
+        }
+        
+        100%{
+            transform: translateY(-20px);
+        }
+    }
+    
+    .fa-hand-pointer{
+        color: #ba0104;
+        opacity: 0%;
+    
+        animation: bounce 1s ease-in-out infinite, show 3s ease-in;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes show{
+        0%{
+            opacity: 0%;
+        }
+    
+        100%{
+            opacity: 100%;
+        }
+    }
 
 .textbox{
     padding-left: 0.5em;
@@ -106,6 +144,7 @@
 
     font-size: 3.7em;
     line-height: 1em;
+    justify-items: center;
 }
 .textboldthree{
     padding-left: 0em;
@@ -122,4 +161,21 @@
     position: fixed;
     z-index: 1;
 }
+
+.countdown{
+    font-size: 7em;
+    line-height: 1em;
+
+    animation: countdown 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes countdown {
+    0%{
+        content: "3";
+    }
+    50%{
+        content: "3";
+    }
+}
+
 }
