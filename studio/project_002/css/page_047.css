@@ -40,6 +40,18 @@
         top: -2em;
     }
 
+    #box{
+        top: 0em;
+        left: 0em;
+    }
+
+    .rain{
+        top: 0em;
+        left: 0em;
+        background-image: url(../img/rain.gif);
+    }
+
+
     #container{ 
         display: grid;
         grid-template-columns: auto;
@@ -48,18 +60,18 @@
         box-sizing: border-box;
         background: none;
 
-        margin-top: 9em;
-        margin-left: 4em;
-        margin-right: 4em;
-        margin-bottom: 8em;
+        padding-top: 9em;
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-bottom: 8em;
 
-        width: 40em;
+        width: 100vw;
         height: auto;
         left: 0px;
         right: 0px;
 
         z-index: 1;
-        position: relative;
+        background-color: rgba(0, 0, 0, 0.7);
     }
 
     .fa-arrows-up-down{
@@ -108,6 +120,7 @@
     margin: 0em;
     color: #ba0104;
     line-height: 10mm;
+    z-index: 1;
 }
 
 .textbold{
