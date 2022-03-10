@@ -43,15 +43,15 @@
     #container{ 
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows:repeat(2, auto);
-        grid-gap: 2em;
+        grid-template-rows:repeat(8, auto);
+        grid-gap: 10em;
         box-sizing: border-box;
         background: none;
 
-        margin-top: 3em;
+        margin-top: 9em;
         margin-left: 4em;
         margin-right: 4em;
-        margin-bottom: 4em;
+        margin-bottom: 8em;
 
         width: 40em;
         height: auto;
