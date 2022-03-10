@@ -71,7 +71,7 @@
         right: 0px;
 
         z-index: 1;
-        background-color: rgba(0, 0, 0, 0.7);
+        background: linear-gradient(0deg, rgba(255,255,255,0.853813559322034) 0%, rgba(0,0,0,0.847457627118644) 70%);
     }
 
     .fa-arrows-up-down{
