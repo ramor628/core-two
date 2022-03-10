@@ -11,6 +11,9 @@
         color: #ba0104;
     }
 
+    #rain{
+        display: none;
+    }
 
     a{
         text-decoration: none;

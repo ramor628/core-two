@@ -12,6 +12,10 @@
         color: #ba0104;
     }
 
+    #cargas{
+        display: none;
+    }
+
     a{
         text-decoration: none;
         color: #ba0104;

@@ -16,6 +16,10 @@
         text-decoration: none;
         color: #ba0104;
     }
+
+    #cargas{
+        display: none;
+    }
     
     
     p{

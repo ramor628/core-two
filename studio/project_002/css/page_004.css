@@ -11,6 +11,10 @@
         color: #ba0104;
     }
 
+    #carbrakes{
+        display: none;
+    }
+
     a{
         text-decoration: none;
     }

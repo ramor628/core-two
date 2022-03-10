@@ -1,7 +1,9 @@
-function rain(){
-    var div = document.getElementById('first');
+/*window.onload=function carFast(){
+    var sample = document.getElementById('cargas');
+    sample.play();
+};*/
 
-    if (document.getElementById('first').style.opacity=='0%'){
-        document.getElementById('first').style.display= 'none';
-    }
+window.onload = function() {
+    document.getElementById('cargas').play();
+    document.getElementById('cargas').loop = true;
 }
