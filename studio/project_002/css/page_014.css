@@ -16,10 +16,6 @@
         text-decoration: none;
         color: #ba0104;
     }
-
-    #cargas{
-        display: none;
-    }
     
     
     p{
@@ -160,6 +156,14 @@
         padding-right: 0.5em;
         margin: 0em;
         color: #ba0104;
+    }
+
+    #playaudio{
+        float: left;
+        top: 1em;
+        left: 1em;
+        position: fixed;
+        z-index: 1;
     }
 
 }

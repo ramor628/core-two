@@ -7,14 +7,14 @@
     
     <script src="https://kit.fontawesome.com/d6cd2c214f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/page_008.css">
-    <script src="../javascript/page_005.js"></script>
+    <script src="../javascript/page_001.js"></script>
 
     <title>Project 2</title>
 
 </head>
 <body>
 
-    <audio id="cargas" src="../audio/aceleration_sound_003.mp3"></audio>
+    <audio id="playsound" src="../audio/aceleration_sound_003.mp3"></audio>
        
     <div id="box">
      <img class="car" src="../img/car-07.png" alt="">
@@ -26,6 +26,10 @@
                 </p>
             </a>
         </div>
+    </div>
+
+    <div ontouchstart="pressplay()" id="playaudio">
+        <i class="fa-solid fa-circle-play fa-2xl"></i>
     </div>
 
 </body>
