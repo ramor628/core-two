@@ -1,0 +1,104 @@
+@import url("https://use.typekit.net/pvc1hts.css");
+
+@media (orientation: landscape) {
+    html{
+        width: 100%;
+    }
+
+    body{
+        text-align: -webkit-center;
+        background: #000000;
+        color: #ba0104;
+    }
+
+
+    a{
+        text-decoration: none;
+        color: #ba0104;
+    }
+    
+    
+    p{
+        text-align: center;
+        font-size: 1.7em;
+        line-height: 10mm;
+    
+        font-family: 'anton', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #ba0104;
+        margin: 0em;
+    }
+
+  
+    #box{
+        margin: 0%;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        background-image: url(../img/rain.gif);
+        background-repeat: no-repeat;
+    }
+
+    #box::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .car{
+        height: 24em;
+        width: 100vw;
+        z-index: 0;
+        position: fixed;
+        top: -2em;
+    }
+
+    #container{ 
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:repeat(1, auto);
+        grid-gap: 1em;
+        box-sizing: border-box;
+        background: none;
+        justify-items: center;
+
+        margin-top: 6em;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-bottom: 0em;
+
+        width: 40em;
+        height: 11em;
+        left: 0px;
+        right: 0px;
+
+        z-index: 1;
+        position: fixed;
+    }
+
+
+.textbox{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: 0em;
+    color: #ba0104;
+    line-height: 10mm;
+}
+
+.textbold{
+    padding-left: 2em;
+    padding-right: 2em;
+
+    font-size: 4em;
+    line-height: 1em;
+}
+
+}

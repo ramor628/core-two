@@ -32,7 +32,7 @@
         align-items: center;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: auto;
-        grid-gap: 10em;
+        grid-gap: 0em;
         box-sizing: border-box;
         background: none;
         justify-items: center;
@@ -44,11 +44,24 @@
 
     img{
         height: auto;
-        width: 20em;
+        width: 28em;
     }
 
     #press{
-        position: absolute;
+        position: fixed;
+        top: -3em;
+    }
+
+    .text{
+        position: fixed;
+        top: 2em;
+        left: 11.4em;
+        background-color: white;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1.1em;
+        padding-right: 1.1em;
+        border-radius: 25%;
     }
 }
 
