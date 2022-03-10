@@ -35,14 +35,14 @@
         align-items: center;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: auto;
-        grid-gap: 1em;
+        grid-gap: 3em;
         box-sizing: border-box;
         background: none;
         justify-items: center;
 
-        margin-left:  10em;
-        margin-right: 10em;
-        margin-top: 5em;
+        padding-left:  10em;
+        padding-right: 10em;
+        padding-top: 5em;
     }
 
     .gas{
@@ -113,10 +113,10 @@
         justify-items: center;
 
         position: fixed;
-        margin-top: 6em;
-        margin-left: 4em;
-        margin-right: 4em;
-        margin-bottom: 5em;
+        padding-top: 5em;
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-bottom: 5em;
 
         top: -15em;
         z-index: 1;

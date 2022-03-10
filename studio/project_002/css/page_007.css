@@ -70,13 +70,13 @@
         background: none;
         justify-items: center;
 
-        margin-top: 6em;
-        margin-left: 4em;
-        margin-right: 4em;
-        margin-bottom: 0em;
+        padding-top: 6em;
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-bottom: 0em;
 
-        width: 40em;
-        height: 11em;
+        width: 80vw;
+        height: auto;
         left: 0px;
         right: 0px;
 
@@ -110,6 +110,7 @@
     margin-bottom: 7em;
 
     z-index: 1;
+    overflow: hidden;
 }
 
 
