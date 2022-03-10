@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <audio id="cargas" src="../audio/aceleration_sound_003.mp3"></audio>
+    <audio id="playsound" src="../audio/aceleration_sound_003.mp3"></audio>
 
     <div id="box">
      <img class="car" src="../img/car-07.png" alt="">
@@ -30,6 +30,10 @@
                     tail. Possum.
                 </p>
             </a>
+        </div>
+
+        <div ontouchstart="pressplay()" id="playaudio">
+            <i class="fa-solid fa-circle-play fa-2xl"></i>
         </div>
         
     </div>
