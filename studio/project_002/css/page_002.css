@@ -60,4 +60,11 @@
         height: 40vh;
         width: 100vw;
     }
+
+    #playaudio{
+        float: left;
+        top: 1em;
+        left: 1em;
+        position: fixed;
+    }
 }

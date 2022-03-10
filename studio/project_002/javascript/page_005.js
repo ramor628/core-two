@@ -7,3 +7,7 @@ window.onload = function() {
     document.getElementById('cargas').play();
     document.getElementById('cargas').loop = true;
 }
+
+function pressplay(){
+    document.getElementById('playsound').play();
+}

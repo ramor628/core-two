@@ -7,11 +7,12 @@
 
     <script src="https://kit.fontawesome.com/d6cd2c214f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/page_002.css">
-    <script src="../javascript/nedry.js"></script>
+    <script src="../javascript/page_005.js"></script>
 
     <title>Project 2</title>
 </head>
 <body>
+    <audio id="playsound" src="../audio/gate_sound.mp3"></audio>
     
     <div id="door">
         <a href="./page_003.html">
@@ -20,6 +21,10 @@
         <p id="push">
             PUSH THE DOOR OPEN
         </p>
+    </div>
+
+    <div ontouchstart="pressplay()" id="playaudio">
+        <i class="fa-solid fa-circle-play fa-2xl"></i>
     </div>
 
 </body>

@@ -7,22 +7,28 @@
 
     <script src="https://kit.fontawesome.com/d6cd2c214f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/page_001.css">
-    <script src="../javascript/nedry.js"></script>
+    <script src="../javascript/page_005.js"></script>
 
     <title>Project 2</title>
 </head>
 <body>
 
-    <a href="./page_002.html">
-        <div id="container">
+    <audio id="playsound" src="../audio/electricity_sound.mp3"></audio>
+
+    <div id="container">
+        <a href="./page_002.html">
             <p id="textbox" >
                 The sign said ELECTRIFIED FENCE 10,000 VOLTS DO NOT TOUCH, but Nedry opened it with his bare hand, and unlocked the gate, swinging it wide.
             </p>
+        </a>
             
             <i class="fa-regular fa-circle fa-2xl"></i>
             <i class="fa-solid fa-hand-pointer fa-2xl"></i>
-        </div>
-    </a>
+    </div>
+
+    <div ontouchstart="pressplay()" id="playaudio">
+        <i class="fa-solid fa-circle-play fa-2xl"></i>
+    </div>
     
 </body>
 </html>
