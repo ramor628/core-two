@@ -39,16 +39,11 @@
 
         margin-left:  10em;
         margin-right: 10em;
-        margin-top: 5em;
     }
 
     img{
         height: auto;
         width: 20em;
-    }
-
-    #press{
-        position: absolute;
     }
 
     #playaudio{

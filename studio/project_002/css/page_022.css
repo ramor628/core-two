@@ -39,7 +39,6 @@
 
         margin-left:  10em;
         margin-right: 10em;
-        margin-top: 5em;
     }
 
     img{
@@ -65,11 +64,11 @@
     }
 
     #playaudio{
-        float: left;
-        top: 1em;
-        left: 1em;
-        position: fixed;
-        z-index: 1;
-    }
+    float: left;
+    top: 1em;
+    left: 1em;
+    position: fixed;
+    z-index: 1;
+}
 }
 
