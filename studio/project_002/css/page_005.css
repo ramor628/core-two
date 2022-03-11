@@ -50,10 +50,6 @@
         width: 20em;
     }
 
-    #press{
-
-    }
-
 
     #first{
         display: block;
@@ -113,7 +109,7 @@
         justify-items: center;
 
         position: fixed;
-        padding-top: 2em;
+        padding-top: 4em;
         padding-left: 4em;
         padding-right: 4em;
         padding-bottom: 5em;
