@@ -1,0 +1,227 @@
+@import url("https://use.typekit.net/pvc1hts.css");
+
+@media (orientation: landscape) {
+    html{
+        width: 100%;
+    }
+
+    body{
+        width: 100%;
+        text-align: -webkit-center;
+        background: #000000;
+        background-repeat: repeat-y;
+        color: #ba0104;
+    }
+
+
+    a{
+        text-decoration: none;
+        color: #ba0104;
+    }
+    
+    
+    p{
+        text-align: center;
+        font-size: 1.7em;
+        line-height: 10mm;
+    
+        font-family: 'anton', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #ba0104;
+        margin: 0em;
+    }
+
+    .car{
+        height: 24em;
+        width: 100vw;
+        z-index: 0;
+        position: fixed;
+        top: -2em;
+    }
+
+    #box{
+        top: 0em;
+        left: 0em;
+    }
+
+    .rain{
+        top: 0em;
+        left: 0em;
+        background-image: url(../img/rain.gif);
+    }
+
+
+    #container{ 
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:repeat(8, auto);
+        grid-gap: 15em;
+        box-sizing: border-box;
+        background: none;
+
+        padding-top: 6em;
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-bottom: 10em;
+
+        width: 100vw;
+        height: auto;
+        left: 0px;
+        right: 0px;
+
+        z-index: 1;
+        background: linear-gradient(0deg, rgba(186,1,4,0.902542372881356) 0%, rgba(0,0,0,0.847457627118644) 70%);
+    }
+
+    .fa-arrows-up-down{
+        color: #ba0104;
+        opacity: 0%;
+    
+        animation: bounce 1s ease-in-out infinite, show 3s ease-in;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes bounce{
+        0%{
+            transform: translateY(-20px);
+        }
+        
+        50%{
+            transform: translateY(0px);
+        }
+        
+        100%{
+            transform: translateY(-20px);
+        }
+    }
+    
+    .fa-hand-pointer{
+        color: #ba0104;
+        opacity: 0%;
+    
+        animation: bounce 1s ease-in-out infinite, show 3s ease-in;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes show{
+        0%{
+            opacity: 0%;
+        }
+    
+        100%{
+            opacity: 100%;
+        }
+    }
+
+.textbox{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: 0em;
+    color: #ba0104;
+    line-height: 10mm;
+    z-index: 1;
+}
+
+.textbold{
+    padding-left: 1em;
+    padding-right: 1em;
+
+    font-size: 2.5em;
+    line-height: 1em;
+}
+.textboldtwo{
+    padding-left: 1em;
+    padding-right: 1em;
+
+    font-size: 3.7em;
+    line-height: 1em;
+    justify-items: center;
+}
+.textboldthree{
+    padding-left: 0em;
+    padding-right: 0em;
+
+    font-size: 5em;
+    line-height: 1em;
+}
+
+#playaudio{
+    float: left;
+    top: 1em;
+    left: 1em;
+    position: fixed;
+    z-index: 1;
+}
+
+.three{
+    animation: blank 0.7s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+@keyframes blank {
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.two{
+    opacity: 0%;
+    animation: count 0.7s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes count {
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.one{
+    opacity: 0%;
+    animation: count 0.7s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes count {
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+.run{
+    opacity: 0%;
+    animation: run 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes run {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.end{
+    margin-top: 500em;
+    margin-bottom: 2em;
+}
+
+}
